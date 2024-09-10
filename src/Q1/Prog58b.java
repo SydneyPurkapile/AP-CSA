@@ -5,14 +5,19 @@ public class Prog58b {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter num1: ");
-        double A = input.nextDouble();
+        int A = input.nextInt();
         System.out.print("Enter num2: ");
-        double B = input.nextDouble();
+        int B = input.nextInt();
         System.out.print("Enter num3: ");
-        double C = input.nextDouble();
-        int tc = (int)Math.pow(B, 2);
-        int fill = tc - (4 * A * C);
-        int sqrt = (int) Math.sqrt(fill, 2);
-        double answer = (-B + ()) / 2 * A;
+        int C = input.nextInt();
+        double pos = (-B + (Math.sqrt(Math.pow(B, 2) - (4 * A * C)))) / (2 * A);
+        double neg = (-B - (Math.sqrt(Math.pow(B, 2) - (4 * A * C)))) / (2 * A);
+        System.out.println("The roots are: " + pos + "  " + neg);
     }
 }
+/*
+Enter num1: 1
+Enter num2: 5
+Enter num3: 6
+The roots are: -2.0  -3.0
+ */
