@@ -1,4 +1,4 @@
-package Prog435g;
+package Q2.Prog435g;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

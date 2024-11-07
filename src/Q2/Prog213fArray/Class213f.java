@@ -1,4 +1,4 @@
-package Prog213fArray;
+package Q2.Prog213fArray;
 
 public class Class213f {
     private double myKWH;

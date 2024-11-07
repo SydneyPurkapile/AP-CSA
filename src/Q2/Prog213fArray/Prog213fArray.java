@@ -1,4 +1,4 @@
-package Prog213fArray;
+package Q2.Prog213fArray;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Prog435g;
+package Q2.Prog435g;
 
 public class Class435g {
     private int myScore;
