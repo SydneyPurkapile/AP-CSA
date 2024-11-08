@@ -7,5 +7,29 @@ public class Class214b {
     private int myShiftCode;
     private int myHrWork;
 
+    public Class214b(int num) {
 
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
