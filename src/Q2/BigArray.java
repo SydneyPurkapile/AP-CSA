@@ -55,6 +55,97 @@ public class BigArray {
         array[2] = 5;
         System.out.println("The number that was ousted: " + myThird);
     // Step 10
-
+        for (int num : array)
+            if (num >= 50 && num <= 59)
+                System.out.print(num + " ");
+        System.out.println();
+    // Step 11
+        for (int i = 0; i < array.length; i++)
+            if (array[i] % 4 == 0)
+                System.out.print(array[i] + " ");
+        System.out.println();
+    // Step 12
+        boolean sixty = false;
+        for (int n : array)
+            if (n == 60)
+                sixty = true;
+        System.out.println("Is 60 in the list: " + sixty);
+    // Step 13
+        boolean same = true;
+        for (int lcv = 0; lcv < array.length; lcv++)
+            if (array[lcv] != array[(array.length-1) - lcv])
+                same = false;
+        System.out.println("Is the array palindromic: " + same);
+    // Step 14
+        double average = 0;
+        for (int x : array)
+            average += x;
+        average /= array.length;
+        int avgCount = 0;
+        for (int x : array)
+            if (x > average)
+                avgCount++;
+        System.out.printf("There are %d numbers greater than the average\n", avgCount);
+    // Step 15
+        int evens = 0;
+        for (int num : array)
+            if (num %2 == 0)
+                evens++;
+        System.out.printf("There are %d even numbers\n", evens);
+    // Step 16
+        int[] array2 = new int[array.length];
+        for (int i = 0; i < array.length; i++)
+            array2[i] = array[(array.length-1) - i];
+        for (int n : array2)
+            System.out.print(n + " ");
+        System.out.println();
+    // Step 17
+        int[] shiftArr = circularShiftRight(array);
+        for (int n : shiftArr)
+            System.out.print(n + " ");
+        System.out.println();
+    // Step 18
+        int sum = 0;
+        for (int num : array) {
+            int digitsum = 0;
+            int temp = num;
+            while (temp > 0) {
+                int n = temp % 10;
+                temp /= 10;
+                digitsum += n;
+            }
+            sum += digitsum;
+        }
+        System.out.println("Sum of all digits of all elements: " + sum);
+    }
+    // For Step 17
+    public static int[] circularShiftRight(int[] arr) {
+        int temp = arr[arr.length - 1];
+        int[] shifted = new int[arr.length];
+        for (int lcv = 1; lcv < arr.length; lcv++)
+            shifted[lcv] = arr[lcv-1];
+        shifted[0] = temp;
+        return(shifted);
     }
 }
+/*
+65 77 45 70 26 72 25 31 26 54 41 76 69 73 60 26 89 49 33
+65 77 45 70 26 72 25 31 26 54 41 76 69 73 60 26 89 49 33
+The middle number is: 54
+Average of first, middle, and last numbers: 50.666666666666664
+Smallest number: 25
+Largest number: 89
+65 77 45 70 26 72 89 31 26 54 41 76 69 73 60 26 25 49 33
+65 77 45 70 26 72 89 31 26 6 41 76 69 73 60 26 25 49 33
+75 87 55 80 36 82 99 41 36 16 51 86 79 83 70 36 35 59 43
+The number that was ousted: 55
+51 59
+80 36 36 16 36
+Is 60 in the list: false
+Is the array palindromic: false
+There are 10 numbers greater than the average
+There are 8 even numbers
+43 59 35 36 70 83 79 86 51 16 36 41 99 82 36 80 5 87 75
+43 75 87 5 80 36 82 99 41 36 16 51 86 79 83 70 36 35 59
+Sum of all digits of all elements: 190
+ */

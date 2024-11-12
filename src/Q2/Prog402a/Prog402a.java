@@ -9,7 +9,8 @@ public class Prog402a {
             Scanner file = new Scanner(new File("Langdat/prg402a.dat"));
 
             while (file.hasNext()) {
-
+                System.out.println("ID\t\tScore\t\tDifference");
+                
             }
 
         } catch (IOException e) {
