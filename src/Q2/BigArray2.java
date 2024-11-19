@@ -73,9 +73,26 @@ public class BigArray2 {
                     System.out.print(cat.getName() + "\t");
             System.out.println();
         // Step 11
-
+            int k = 0;
+            while (k < numCats) {
+                if (cats[k].getCost() < 26) {
+                    for (int j = k; j < numCats-1; j++)
+                        cats[j] = cats[j+1];
+                    numCats--;
+                } else  k++;
+            }
+            System.out.println("The cats costing >= $26 actually cost: ");
+            for (int c = 0; c < numCats; c++)
+                System.out.println(cats[c].getCost() + " ");
+            System.out.println();
         // Step 12
-
+            System.out.println("The cats being put on a diet are: ");
+            for (int i = 0; i < numCats; i++) {
+                Cat cat = cats[i];
+                if (cat.getWeight() > 15)
+                    System.out.print(cat.getName() + "\t");
+            }
+            System.out.println();
 
             while (file.hasNext()) {
 
