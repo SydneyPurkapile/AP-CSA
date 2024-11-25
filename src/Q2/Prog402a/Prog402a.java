@@ -9,8 +9,8 @@ public class Prog402a {
             Scanner file = new Scanner(new File("Langdat/prg402a.dat"));
             int ID = 0;
             int Score = 0;
-            //while (file.hasNext()) {
-                //ID =
+            while (file.hasNext()) {
+                ID =
             }
 
         } catch (IOException e) {
