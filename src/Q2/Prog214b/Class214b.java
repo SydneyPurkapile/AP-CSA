@@ -2,13 +2,19 @@ package Q2.Prog214b;
 
 public class Class214b {
     private int myNum;
-    private int myPay;
-    private int myBPR;
-    private int myShiftCode;
-    private int myHrWork;
+    private double myPay;
+    private double myBPR;
+    private double mySC;
+    private double myHours;
+    private double myGP;
 
-    public Class214b(int num) {
 
+    public Class214b(int employee, double ytd, double bpr, double sc, double hours) {
+        myNum = employee;
+        myPay = ytd;
+        myBPR = bpr;
+        mySC = sc;
+        myHours = hours;
     }
 }
 
