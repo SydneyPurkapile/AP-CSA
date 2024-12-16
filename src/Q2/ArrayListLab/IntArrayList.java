@@ -48,7 +48,7 @@ public class IntArrayList {
     }
 
     public void set(int index, int num) {
-        myArray[num] = myArray[index];
+        myArray[index] = num;
     }
 
     public int size() {
