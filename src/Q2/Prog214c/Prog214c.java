@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Prog214c {
     public static void main(String[] args) {
         try {
-            Scanner file = new Scanner(new File("Langdat/FILENAME"));
+            Scanner file = new Scanner(new File("Langdat/prog214c.dat"));
 
             while (file.hasNext()) {
 
