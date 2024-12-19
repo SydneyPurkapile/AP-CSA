@@ -5,7 +5,7 @@ public class Class214c {
     private int myGallons;
     private String myCW;
     private double Gcost;
-    private double Ccost
+    private double Ccost;
     private double cost;
 
     public Class214c(String GT, int gallons, String CW) {
@@ -30,5 +30,7 @@ public class Class214c {
     public void getCarwash() {
         if (myCW.equals("N"))
             Ccost = 0;
+        else
+            Ccost = (myGallons -10) * 0.1;
     }
 }
