@@ -15,7 +15,7 @@ public class Class214c {
         Gcost = 0.0;
         Ccost = 0;
         cost = 0;
-    }
+}
 
     public void getCost() {
         if (myGT.equals("P"))
@@ -28,7 +28,7 @@ public class Class214c {
     }
 
     public void getCarwash() {
-        if (myCW.equals("Nn"))
+        if (myCW.equals("N"))
             Ccost = 0;
     }
 }
