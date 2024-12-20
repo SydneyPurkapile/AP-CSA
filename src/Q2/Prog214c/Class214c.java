@@ -1,36 +1,55 @@
 package Q2.Prog214c;
 
 public class Class214c {
-    private String myGT;
-    private int myGallons;
-    private String myCW;
-    private double Gcost;
-    private double Ccost;
-    private double cost;
+    private double gallons;
+    private String wash;
+    private String type;
+    private double TGC;
+    private double GC;
+    private double WC;
+    private double total;
 
-    public Class214c(String GT, int gallons, String CW) {
-        myGT = GT;
-        myGallons = gallons;
-        myCW = CW;
-        Gcost = 0.0;
-        Ccost = 0;
-        cost = 0;
-}
-
-    public void getCost() {
-        if (myGT.equals("P"))
-            Gcost = 1.479;
-        else if (myGT.equals("R"))
-            Gcost = 1.359;
-        else
-            Gcost = 1.429;
-        cost = Gcost * myGallons;
+    public Class214c(double g, String w, String t) {
+        gallons = g;
+        wash = w;
+        type = t;
+        TGC = 0.0;
+        GC = 0.0;
+        WC = 2.0;
+        total = 0.0;
     }
 
-    public void getCarwash() {
-        if (myCW.equals("N"))
-            Ccost = 0;
-        else
-            Ccost = (myGallons -10) * 0.1;
+    public void calcGC() {
+        if (type.equals("R")) {
+            GC = 1.359;
+            TGC = GC * gallons;
+        } else if (type.equals("P")) {
+            GC = 1.479;
+            TGC = GC * gallons;
+        } else {
+            GC = 1.429;
+            TGC = GC * gallons;
+        }
     }
+
+    public void calcWC() {
+        if (wash.equals("Y")) {
+            if (gallons > 20)
+                WC = 0;
+            else if (gallons > 10)
+                WC -= ((gallons - 10) * 0.2);
+            else
+                WC = 2.0;
+        } else
+            WC = 0;
+    }
+
+    public void totalCalc() {
+        total = TGC + WC;
+    }
+
+    public double getGC()    { return GC; }
+    public double getTGC()   { return TGC; }
+    public double getWC()    { return WC; }
+    public double getTotal() { return total; }
 }
