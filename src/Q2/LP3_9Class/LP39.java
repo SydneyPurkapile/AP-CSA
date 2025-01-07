@@ -21,6 +21,8 @@ public class LP39 {
         System.out.print("Year: ");
         int ty = input.nextInt();
 
+        int bdd = (30 - day) * 8;
+        int tdd = (30 - td) * 8;
 
 }
 }
