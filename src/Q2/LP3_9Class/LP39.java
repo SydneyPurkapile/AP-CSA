@@ -21,8 +21,12 @@ public class LP39 {
         System.out.print("Year: ");
         int ty = input.nextInt();
 
-        int bdd = (30 - day) * 8;
-        int tdd = (30 - td) * 8;
+        int letMeThink = ((30 - day) * 8) + (td * 8);
+        letMeThink += (((ty - year - 1) * 365) * 8);
+        letMeThink += ((12 - month) * 30 * 8) + (tm * 30 * 8);
+
+        System.out.println("Days Alive: " + letMeThink/8);
+        System.out.println("Time Slept: " + letMeThink);
 
 }
 }
