@@ -20,6 +20,29 @@ public class LP314 {
         System.out.print("Martinez: ");
         int mvc = input.nextInt();
 
+        int at = avy + avj + avc;
+        int mt = mvy + mvj + mvc;
+        int tv = at + mt;
+        double ap = (100.0 / tv) * at;
+        ap = Math.round(ap * 100.0) / 100.0;
+        double mp = (100.0 / tv) * mt;
+        mp = Math.round(mp * 100.0) / 100.0;
 
+        System.out.println("Awbrey: ");
+        System.out.println("Votes: " + at);
+        System.out.println("Percentage: " + ap);
+        System.out.println("Martinez: ");
+        System.out.println("Votes: " + mt);
+        System.out.println("Percentage: " + mp);
+        System.out.println("Total votes: " + tv);
     }
 }
+/*
+Awbrey:
+Votes: 616618
+Percentage: 49.71
+Martinez:
+Votes: 623926
+Percentage: 50.29
+Total votes: 1240544
+ */
