@@ -9,6 +9,8 @@ public class Prog465c {
             Scanner file = new Scanner(new File("Langdat/prog465c.txt"));
 
             int[][] mat = new int[file.nextInt()][file.nextInt()];
+            int et = 0;
+
             for (int r = 0; r < mat.length; r++)
                 for (int c = 0; c < mat[0].length-1; c++)
                     mat[r][c] = file.nextInt();
