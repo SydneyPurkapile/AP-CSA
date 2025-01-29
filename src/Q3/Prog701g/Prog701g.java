@@ -32,8 +32,41 @@ public class Prog701g {
                 num = file.nextInt();
             }
 
+            double tot = 0; // for avg gpa
+            int cnt = 0;
+            int totstu = 0;
+            String large = "";
+            String small = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz             wsihd[gkslhfdiosetrgnospeihjt9-jtehmoept89jhpd9thjpt9jhdlfkgjhlj0e9rtujhpdihguihnwsjobh34nuoghsfdjhgohtrougsojnhosnhpisjtisnoiunsopndithgsnotdisdptijhistjhnoistnhjisjhisnhtrsndiorhnspdihpidshjrpjrhposjhpsjihsihrjsodrihjpsdhjisjhrjsdhjosejdhrjrhidrhnmoirdhnprdijhpsjrhsnjrkdhganbriugh aweht978wt h9w4tyhwoauyt9ahtasjdhga";
+
+            for (Person p : list) {
+                if (p instanceof Student) {
+                    tot += ((Student) p).getGPA();
+                    cnt++;
+                } else if (p instanceof Teacher) {
+                    totstu += ((Teacher) p).getNumStu();
+                } else if ( p instanceof Admin) {
+                    String word = ((Admin) p).getFavw();
+                    if (word.length() > large.length())
+                        large = word;
+                    if (word.length() < small.length())
+                        small = word;
+                }
+            }
+
+            System.out.printf("Average student GPA: %.2f\n", tot/cnt);
+            System.out.println("Total number of students taught by teachers: " + totstu);
+            System.out.println("Smallest favorite admin word: " + small);
+            System.out.println("Largest favorite admin word: " + large);
+
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
     }
 }
+
+/*
+Average student GPA: 3.06
+Total number of students taught by teachers: 316
+Smallest favorite admin word: done
+Largest favorite admin word: coolbeans
+ */
