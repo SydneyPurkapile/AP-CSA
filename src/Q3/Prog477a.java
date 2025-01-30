@@ -7,47 +7,48 @@ public class Prog477a {
     public static void main(String[] args) {
         try {
             Scanner file = new Scanner(new File("Langdat/prog477a.dat"));
-            int[][] mat = new int[4][5];
-            System.out.println("Grade\tMale\tFemale\tTotal");
-            int mc = 0;
-            int fc = 0;
-            int am = 0;
-            int bm = 0;
-            int cm = 0;
-            int dm = 0;
-            int fm = 0;
-            int af = 0;
-            int bf = 0;
-            int cf = 0;
-            int df = 0;
-            int ff = 0;
+            int[][] mat = new int[3][6];
+            System.out.println("Male\tFemale\tTotal");
 
             while (file.hasNext()) {
                 if (file.nextInt() == 1) {
-                    mc++;
+                    mat[0][5]++;
                     if (file.nextInt() == 1)
-                        am++;
+                        mat[0][0]++;
                     else if (file.nextInt() == 2)
-                        bm++;
+                        mat[0][1]++;
                     else if (file.nextInt() == 3)
-                        cm++;
+                        mat[0][2]++;
                     else if (file.nextInt() == 4)
-                        dm++;
+                        mat[0][3]++;
                     else if (file.nextInt() == 5)
-                        fm++;
+                        mat[0][4]++;
                 }
                 else if (file.nextInt() == 2) {
-                    fc++;
+                    mat[1][5]++;
                     if (file.nextInt() == 1)
-                        af++;
+                        mat[1][0]++;
                     else if (file.nextInt() == 2)
-                        bf++;
+                        mat[1][1]++;
                     else if (file.nextInt() == 3)
-                        cf++;
+                        mat[1][2]++;
                     else if (file.nextInt() == 4)
-                        df++;
+                        mat[1][3]++;
                     else if (file.nextInt() == 5)
-                        ff++;
+                        mat[1][4]++;
+                }
+
+                mat[2][0] = mat[0][0] + mat[1][0];
+                mat[2][1] = mat[0][1] + mat[1][1];
+                mat[2][2] = mat[0][2] + mat[1][2];
+                mat[2][3] = mat[0][3] + mat[1][3];
+                mat[2][4] = mat[0][4] + mat[1][4];
+                mat[2][5] = mat[0][5] + mat[1][5];
+
+                for (int r = 0; r < mat.length; r++) {
+                    for (int c = 0; c < mat[0].length; c++)
+                        System.out.print(mat[r][c] + " ");
+                    System.out.println();
                 }
             }
 
