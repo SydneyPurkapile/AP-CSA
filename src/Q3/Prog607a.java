@@ -37,6 +37,8 @@ public class Prog607a {
             if (date.substring(0, 2).equals("12"))
                 code += "L";
 
+
+
             System.out.print("The code is: " + code);
         } else if (choice == 2) {
             System.out.print("Enter Code: ");
