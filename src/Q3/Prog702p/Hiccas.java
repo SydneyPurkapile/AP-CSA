@@ -1,4 +1,4 @@
-package Q3.Prog492h;
+package Q3.Prog702p;
 
 public class Hiccas extends names {
 

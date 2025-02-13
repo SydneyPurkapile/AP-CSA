@@ -1,9 +1,9 @@
-package Q3.Prog492h;
+package Q3.Prog702p;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Prog492h {
+public class Prog702p {
     public static void main(String[] args) {
         try {
             Scanner file = new Scanner(new File("Langdat/prog701g.dat"));
