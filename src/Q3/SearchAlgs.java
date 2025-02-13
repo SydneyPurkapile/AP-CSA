@@ -31,7 +31,7 @@ public class SearchAlgs {
         if (arr[mid] == x)
             return mid;
         else if (arr[mid] > x)
-            binarySearchRec(arr, x, low, mid-1);
+            return binarySearchRec(arr, x, low, mid-1);
         return binarySearchRec(arr, x, mid+1, high);
     }
 }
