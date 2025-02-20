@@ -1,6 +1,6 @@
 package Q3.Prog702p;
 
-public class Wallies implements names {
+public class Wallies extends Animal {
     private String fname;
     private String lname;
     private String favWord;

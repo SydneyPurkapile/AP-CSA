@@ -1,6 +1,6 @@
 package Q3.Prog702p;
 
-public class Hiccas implements names {
+public class Hiccas extends Animal {
     private String fname;
     private String lname;
     private String favWord;

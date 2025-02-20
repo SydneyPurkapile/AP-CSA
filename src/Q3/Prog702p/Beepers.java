@@ -1,6 +1,6 @@
 package Q3.Prog702p;
 
-public class Beepers implements names {
+public class Beepers extends Animal {
     private String fname;
     private String lname;
     private String favWord;
