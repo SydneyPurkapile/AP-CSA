@@ -50,7 +50,18 @@ public class Prog505w {
             }
 
             // TODO: report income of the day
+
             // TODO: cumulative weight of all animals
+            for (int lcv = 0; lcv < animals.size(); lcv++)
+                if (animals.get(lcv) instanceof Cow) {
+
+                }
+            for (int lcv = 0; lcv < animals.size(); lcv++)
+                if (animals.get(lcv) instanceof Horse) {
+
+                }
+
+
             // TODO: if there's enough to feed them all
 
             int maxCowIndex = 0;
