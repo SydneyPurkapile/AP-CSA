@@ -50,16 +50,20 @@ public class Prog505w {
             }
 
             // TODO: report income of the day
+            double totalIncome = 0.0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if (animals.get(lcv) instanceof Cow)
+                    totalIncome += Cow.value();
+                if (animals.get(lcv) instanceof Horse)
+                    totalIncome += Horse.value();
+            }
 
             // TODO: cumulative weight of all animals
-            for (int lcv = 0; lcv < animals.size(); lcv++)
-                if (animals.get(lcv) instanceof Cow) {
-
-                }
-            for (int lcv = 0; lcv < animals.size(); lcv++)
-                if (animals.get(lcv) instanceof Horse) {
-
-                }
+            int totalWeight = 0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                totalWeight += animals.get();
+            }
+            System.out.println("The total weight of all the animals is: " + totalWeight);
 
 
             // TODO: if there's enough to feed them all
