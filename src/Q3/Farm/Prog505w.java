@@ -58,6 +58,7 @@ public class Prog505w {
                     totalIncome += Horse.value(cornCost, hayCost);
             }
 
+
             // TODO: cumulative weight of all animals
             int totalWeight = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
@@ -67,6 +68,7 @@ public class Prog505w {
 
 
             // TODO: if there's enough to feed them all
+
 
             int maxCowIndex = 0;
             double maxCowValue = 0.0;
