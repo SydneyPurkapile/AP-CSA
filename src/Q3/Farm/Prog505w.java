@@ -53,15 +53,15 @@ public class Prog505w {
             double totalIncome = 0.0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
                 if (animals.get(lcv) instanceof Cow)
-                    totalIncome += Cow.value();
+                    totalIncome += Cow.value(cornCost, hayCost);
                 if (animals.get(lcv) instanceof Horse)
-                    totalIncome += Horse.value();
+                    totalIncome += Horse.value(cornCost, hayCost);
             }
 
             // TODO: cumulative weight of all animals
             int totalWeight = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
-                totalWeight += animals.get();
+                totalWeight += (Horse).getWeight();
             }
             System.out.println("The total weight of all the animals is: " + totalWeight);
 
