@@ -7,6 +7,7 @@ public class Prog295c {
     public static void main(String[] args) {
         try {
             Scanner file1 = new Scanner(new File("Langdat/merge1.dat"));
+            System.out.println("Social Security #\tClass\tType\tDepartment");
 
             while (file1.hasNext()) {
 
