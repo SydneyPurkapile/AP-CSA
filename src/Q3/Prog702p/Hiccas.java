@@ -1,15 +1,10 @@
 package Q3.Prog702p;
 
 public class Hiccas extends Animal {
-    private String fname;
-    private String lname;
-    private String favWord;
     private double furWorth;
 
     public void Hiccas(String fn, String ln, String fav, double fw) {
-        fname = fn;
-        lname = ln;
-        favWord = fav;
+        super(fn, ln, fav);
         furWorth = fw;
     }
 
