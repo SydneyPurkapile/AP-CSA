@@ -10,18 +10,21 @@ public class Prog702p {
 
             while (file.hasNext()) {
                 if (file.nextInt() == 1)
-                    AHHHHHHHHH;
+                    Hiccas bob = new Hiccas(file.next(), file.next(), file.next(), file.nextDouble());
+                    double ah = bob.getAverage();
                 else if (file.nextInt() == 2)
-                    AJJJJJJJJJJJJJ;
+                    Wallies jeff = new Wallies(file.next(), file.next(), file.next(), file.nextInt());
+                    int aw = jeff.getAverage();
                 else if (file.nextInt() == 3)
-                    AJJJJJJJJJkKK;
+                    Beepers jerry = new Beepers(file.next(), file.next(), file.next(), file.next());
+                    String ab = jerry.getAverage();
                 else
                     return;
             }
 
-            System.out.println("Average value of Hicca fur: ");
-            System.out.println("Average number of steps taken by the Wallies: ");
-            System.out.println("Average size of the Beepers' words: ");
+            System.out.println("Average value of Hicca fur: " + ah);
+            System.out.println("Average number of steps taken by the Wallies: " + aw);
+            System.out.println("Average size of the Beepers' words: " + ab);
 
         } catch (IOException e) {
             System.out.println("Error: " + e);
