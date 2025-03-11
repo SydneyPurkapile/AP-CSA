@@ -8,7 +8,22 @@ public class Prog703s {
             Scanner file = new Scanner(new File("Langdat/prog703s.dat"));
 
             while (file.hasNext()) {
-
+                int type = file.nextInt();
+                String name = file.next();
+                int number = file.nextInt();
+                double value = file.nextDouble();
+                Student bob = new Student(name, number, value);
+                if (type == 1) {
+                    String color = file.next();
+                    Apple jeff = new Apple(name, number, value, color);
+                } else if (type == 2) {
+                    double version = filoe.nextDouble();
+                    Windows jeff = new Windows(name, number, value, version);
+                } else if (type == 3) {
+                    int code = file.nextInt();
+                    Linux jeff = new Linux(name, number, value, code);
+                } else
+                    return;
             }
 
         } catch (IOException e) {

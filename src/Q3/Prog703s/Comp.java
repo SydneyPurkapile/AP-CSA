@@ -1,5 +1,8 @@
 public interface comps extends Student{
-	public String getName();
-	public int getNumber();
-	public double getValue();
+	public class comps(String n, int num, double v) {
+		super(n, num, v);
+	}
+	public String getName()  { return name;   }
+	public int getNumber()   { return number; }
+	public double getValue() { return value;  }
 }
