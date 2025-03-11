@@ -24,6 +24,7 @@ public class Prog703s {
                     Linux jeff = new Linux(name, number, value, code);
                 } else
                     return;
+                System.out.println(name + type);
             }
 
         } catch (IOException e) {
