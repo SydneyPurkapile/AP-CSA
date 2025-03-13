@@ -52,10 +52,10 @@ public class Prog505w {
             // TODO: report income of the day
             double totalIncome = 0.0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
-                if (animals.get(lcv) instanceof Cow)
-                    totalIncome += Cow.value(cornCost, hayCost);
-                if (animals.get(lcv) instanceof Horse)
-                    totalIncome += Horse.value(cornCost, hayCost);
+             //   if (animals.get(lcv) instanceof Cow)
+                   // totalIncome += Cow.value(cornCost, hayCost);
+              //  if (animals.get(lcv) instanceof Horse)
+                   // totalIncome += Horse.value(cornCost, hayCost);
             }
 
 

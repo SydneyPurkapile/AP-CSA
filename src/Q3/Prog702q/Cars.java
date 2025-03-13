@@ -1,18 +1,11 @@
 package Q3.Prog702q;
 
 public class Cars implements names {
-    @Override
-    public String getName() {
-        return null;
+    public class Cars (String n, int t, double v) {
+
     }
 
-    @Override
-    public int getTire() {
-        return 0;
-    }
-
-    @Override
-    public double getValue() {
-        return 0;
-    }
+    public String getName() { return name; }
+    public int getTire() { return tires; }
+    public double getValue() { return value; }
 }
