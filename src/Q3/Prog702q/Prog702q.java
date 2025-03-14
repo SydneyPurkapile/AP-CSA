@@ -20,7 +20,8 @@ public class Prog702q {
                     int m = file.nextInt();
                     Trucks ford = new Trucks(n, t, v, m);
                 } else if (type == 3) {
-
+                    String hc = file.next();
+                    Busses schoolBus = new Busses(n, t, v, hc);
                 } else
                     return;
             }
