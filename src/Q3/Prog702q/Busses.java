@@ -8,9 +8,5 @@ public class Busses extends Vehicals {
         homeCity = hc;
     }
 
-
-    public String getName()     { return name;     }
-    public int getTire()        { return tires;    }
-    public double getValue()    { return value;    }
     public String getHomeCity() { return homeCity; }
 }

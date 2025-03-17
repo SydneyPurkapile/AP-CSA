@@ -8,9 +8,5 @@ public class Trucks extends Vehicals {
         miles = m;
     }
 
-
-    public String getName()  { return name;  }
-    public int getTire()     { return tires; }
-    public double getValue() { return value; }
     public int getMiles()    { return miles; }
 }

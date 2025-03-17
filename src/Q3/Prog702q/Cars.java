@@ -8,8 +8,5 @@ public class Cars extends Vehicals {
         worth = w;
     }
 
-    public String getName()  { return name;  }
-    public int getTire()     { return tire;  }
-    public double getValue() { return value; }
     public double getWorth() { return worth; }
 }
