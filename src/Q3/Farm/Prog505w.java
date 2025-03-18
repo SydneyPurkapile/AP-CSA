@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Prog505w {
+/*public class Prog505w {
     public static void main(String[] args) {
         try {
             Scanner file = new Scanner(new File("Langdat/prog505w.dat"));
@@ -60,10 +60,10 @@ public class Prog505w {
 
 
             // TODO: cumulative weight of all animals
-            int totalWeight = 0;
-            for (int lcv = 0; lcv < animals.size(); lcv++) {
-                totalWeight += (Horse).getWeight();
-            }
+            //int totalWeight = 0;
+            //for (int lcv = 0; lcv < animals.size(); lcv++) {
+                //totalWeight += (Horse).getWeight();
+            //}
             System.out.println("The total weight of all the animals is: " + totalWeight);
 
 
@@ -103,3 +103,4 @@ public class Prog505w {
         }
     }
 }
+*/
