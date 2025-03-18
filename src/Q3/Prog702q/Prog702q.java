@@ -21,23 +21,27 @@ public class Prog702q {
                 int type = file.nextInt();
                 String n = file.next();
                 int t = file.nextInt();
-                double v = file.nextDouble();
-                totalValue += v;
+                double v = 0.0;
                 if (type == 1) {
-                    double w = file.nextDouble();
-                    Cars honda = new Cars(n, t, v, w);
+                    v = file.nextDouble();
+                    Cars honda = new Cars(n, t, v);
                     CT += t;
+                    totalValue += v;
                     totalCarValue += v;
                 } else if (type == 2) {
                     int m = file.nextInt();
+                    v = 50000 - (m * 0.25);
                     Trucks ford = new Trucks(n, t, v, m);
                     TT += t;
+                    totalValue += v;
                     if (truckLV < v)
                         truckLV = v;
                 } else if (type == 3) {
                     String hc = file.next();
+                    v = 50000;
                     Busses schoolBus = new Busses(n, t, v, hc);
                     BT += t;
+                    totalValue += v;
                     if (LDN.length() < hc.length())
                         LDN = hc;
                 } else
@@ -58,3 +62,15 @@ public class Prog702q {
         }
     }
 }
+
+/*
+Total number of vehicles: 13
+Total value of vehicles: 428199.75
+Total value of cars: 33950.0
+Truck with the least value: 43750.0
+Bus with the longest home destination name: Minneapolis
+Tire Totals:
+  Car: 15
+  Truck: 95
+  Bus: 69
+ */
