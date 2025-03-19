@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+public class Windows implements Comp {
+    private double version;
+
+    public class Apple(String n, int num, double v, double ver) {
+        super(n, num, v);
+        version = ver;
+    }
+
+    public double getVersion() { return version; }
+}
+=======
 package Q3.Prog703s;
 
 public class Windows implements Comp {
@@ -18,3 +30,4 @@ public class Windows implements Comp {
         return 0;
     }
 }
+>>>>>>> 6080bc01717a0571405af35a0d4f1482fa3c303c

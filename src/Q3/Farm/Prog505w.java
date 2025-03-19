@@ -49,6 +49,35 @@ import java.util.ArrayList;
                 }
             }
 
+<<<<<<< HEAD
+            int income = 0;
+            double minHorseValue = Double.MAX_VALUE;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if (animals.get(lcv) instanceof Horse) {
+                    Horse horse = (Horse) animals.get(lcv);
+                    double horseValue = horse.value(cornCost, hayCost);
+                    income += horseValue;
+                }
+            }
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if (animals.get(lcv) instanceof Cow) {
+                    Cow cow = (Cow) animals.get(lcv);
+                    double cowValue = cow.value(cornCost, hayCost);
+                    income += cowValue;
+                }
+            }
+
+            double totWeight = 0.0;
+            for (int lcv = 0; lcv < animals.size(); lcv++)
+                if (animals.get(lcv) instanceof Cow) {
+                    totWeight += Animal.getWeight();
+                }
+            for (int lcv = 0; lcv < animals.size(); lcv++)
+                if (animals.get(lcv) instanceof Horse) {
+                    totWeight += Animal.getWeight();
+                }
+            System.out.println("Total Weight: " + totWeight);
+=======
             // TODO: report income of the day
             double totalIncome = 0.0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
@@ -65,10 +94,12 @@ import java.util.ArrayList;
                 //totalWeight += (Horse).getWeight();
             //}
             System.out.println("The total weight of all the animals is: " + totalWeight);
+>>>>>>> 6080bc01717a0571405af35a0d4f1482fa3c303c
 
-
-            // TODO: if there's enough to feed them all
-
+            if (corn > cow+horse && hay > cow+horse)
+                System.out.println("There is enough food!");
+            else   
+                System.out.println("There is not enough food");
 
             int maxCowIndex = 0;
             double maxCowValue = 0.0;

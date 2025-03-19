@@ -1,15 +1,10 @@
 package Q3.Prog702p;
 
 public class Beepers extends Animal {
-    private String fname;
-    private String lname;
-    private String favWord;
     private String extraWord;
 
     public void Beepers(String fn, String ln, String fav, String ew) {
-        fname = fn;
-        lname = ln;
-        favWord = fav;
+        super(fn, ln, fav);
         extraWord = ew;
     }
 
