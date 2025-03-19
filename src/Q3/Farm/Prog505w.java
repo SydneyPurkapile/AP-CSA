@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Prog505w {
+/*public class Prog505w {
     public static void main(String[] args) {
         try {
             Scanner file = new Scanner(new File("Langdat/prog505w.dat"));
@@ -49,6 +49,7 @@ public class Prog505w {
                 }
             }
 
+<<<<<<< HEAD
             int income = 0;
             double minHorseValue = Double.MAX_VALUE;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
@@ -76,6 +77,24 @@ public class Prog505w {
                     totWeight += Animal.getWeight();
                 }
             System.out.println("Total Weight: " + totWeight);
+=======
+            // TODO: report income of the day
+            double totalIncome = 0.0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+             //   if (animals.get(lcv) instanceof Cow)
+                   // totalIncome += Cow.value(cornCost, hayCost);
+              //  if (animals.get(lcv) instanceof Horse)
+                   // totalIncome += Horse.value(cornCost, hayCost);
+            }
+
+
+            // TODO: cumulative weight of all animals
+            //int totalWeight = 0;
+            //for (int lcv = 0; lcv < animals.size(); lcv++) {
+                //totalWeight += (Horse).getWeight();
+            //}
+            System.out.println("The total weight of all the animals is: " + totalWeight);
+>>>>>>> 6080bc01717a0571405af35a0d4f1482fa3c303c
 
             if (corn > cow+horse && hay > cow+horse)
                 System.out.println("There is enough food!");
@@ -115,3 +134,4 @@ public class Prog505w {
         }
     }
 }
+*/

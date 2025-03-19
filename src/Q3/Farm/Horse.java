@@ -16,6 +16,6 @@ public class Horse extends Animal {
 
     @Override
     public String getName() { return super.getName() + super.getName() ;}
-    public int getRIdes() { return myNumRides; }
+    public int getRides() { return myNumRides; }
     public double getRideCost() { return myRideCost; }
 }
