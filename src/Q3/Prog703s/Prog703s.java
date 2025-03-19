@@ -9,7 +9,10 @@ public class Prog703s {
             Scanner file = new Scanner(new File("Langdat/prog703s.dat"));
 
             while (file.hasNext()) {
-
+                int type = file.nextInt();
+                String n = file.next();
+                int num = file.nextInt();
+                double v = file.nextDouble();
             }
 
         } catch (IOException e) {
