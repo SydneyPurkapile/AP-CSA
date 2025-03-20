@@ -1,5 +1,5 @@
 package Q3.Prog702p;
-
+/*
 public class Hiccas extends Animal {
     private double furWorth;
 
@@ -13,3 +13,4 @@ public class Hiccas extends Animal {
     public String getName() { return fname + lname; }
     public String getWord() { return favWord; }
 }
+*/

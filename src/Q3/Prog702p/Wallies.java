@@ -1,5 +1,5 @@
 package Q3.Prog702p;
-
+/*
 public class Wallies extends Animal {
     private int steps;
 
@@ -13,3 +13,4 @@ public class Wallies extends Animal {
     public String getName() { return fname + lname; }
     public String getWord() { return favWord; }
 }
+*/

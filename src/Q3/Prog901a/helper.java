@@ -1,4 +1,4 @@
-
+/*
 public class helper {
     public static void printFile(Scanner input) {
         while (input.hasNext()) {
@@ -10,3 +10,4 @@ public class helper {
             System.out.print(file.next());
     }
 }
+*/

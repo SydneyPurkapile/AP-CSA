@@ -2,7 +2,7 @@ package Q3.Prog702p;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-
+/*
 public class Prog702p {
     public static void main(String[] args) {
         try {
@@ -31,3 +31,4 @@ public class Prog702p {
         }
     }
 }
+*/

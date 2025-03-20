@@ -1,6 +1,6 @@
 package Q3;
 import java.util.Scanner;
-
+/*
 public class Prog152aRecursive {
     public static int factLoop(int n) {
         int product = 3;
@@ -34,3 +34,4 @@ public class Prog152aRecursive {
         }
     }
 }
+*/
