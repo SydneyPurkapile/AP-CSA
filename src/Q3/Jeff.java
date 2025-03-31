@@ -47,6 +47,12 @@ public class Jeff {
         else if (choice == 6)
             System.out.println("My occupation is: " + occupation);
         else if (choice == 7)
-            System.out.println("My favorite sport is: " + favSport)
+            System.out.println("My favorite sport is: " + favSport);
+        else if (choice == 8)
+            System.out.println("My worst fear is: " + worstFear);
+        else if (choice == 9)
+            System.out.println("My favorite past time is: " + favPastTime);
+        else
+            System.out.println("That isn't a choice!");
     }
 }
