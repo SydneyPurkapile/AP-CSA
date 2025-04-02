@@ -1,4 +1,4 @@
-package Q3.Farm;
+package Q3.Farm.Prog505w;
 
 public abstract class Animal {
     private String myName;

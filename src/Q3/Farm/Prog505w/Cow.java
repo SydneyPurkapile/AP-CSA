@@ -1,4 +1,6 @@
-package Q3.Farm;
+package Q3.Farm.Prog505w;
+
+import Q3.Farm.Prog505w.Animal;
 
 public class Cow extends Animal {
     private static final double MILK_PRICE_LB = 0.20;
