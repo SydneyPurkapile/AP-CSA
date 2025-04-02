@@ -11,7 +11,7 @@ public class MSOE_2021_1 {
         for (int i = 0; i < sentence.length()-1; i++) {
             if (sentence.substring(i, i+1).equals(" ")) {
                 if (sentence.substring(i-1, i).equals(letter)) {
-                    for (int j = i; j > 0; j--) {
+                    for (int j = i-1; j > 0; j--) {
                         if (sentence.substring(j, j + 1).equals(" ")) {
                             System.out.println("The word is: " + sentence.substring(j + 1, i));
                             return;
@@ -20,6 +20,12 @@ public class MSOE_2021_1 {
                 }
             }
         }
-        System.out.println("There isn't a word ending in this letter: ");
+        System.out.println("There isn't a word ending in " + letter);
     }
 }
+
+/*
+Enter a letter: y
+Enter a sentence: I'm extreamly happy
+The word is: extreamly
+ */
