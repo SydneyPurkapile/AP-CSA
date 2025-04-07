@@ -1,4 +1,4 @@
-package Q3;
+package Q4;
 import java.util.Scanner;
 
 public class MSOE_2021_1 {
