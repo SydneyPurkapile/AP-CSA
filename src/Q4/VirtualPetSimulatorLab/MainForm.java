@@ -16,6 +16,10 @@ public class MainForm extends JFrame{
     // TODO: add adoption buttons
     // Pet list
     private PetManager petManager = new PetManager();
+    private JButton adoptDog;
+    private JButton adoptCat;
+    private JButton button7;
+    private JButton adoptFox;
 
     public MainForm() {
         super("Virtual Pet Simulator");
@@ -72,6 +76,27 @@ public class MainForm extends JFrame{
         });
 
         // TODO: Implement adoption button actions
+        // Adopt a Fox button action
+        adoptFox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        // Adopt a Cat button action
+        adoptCat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        // Adopt a Dog button action
+        adoptDog.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 
     public void updateStatusLabel(String status) {

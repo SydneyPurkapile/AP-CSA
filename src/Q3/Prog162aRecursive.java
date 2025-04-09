@@ -19,7 +19,7 @@ public class Prog162aRecursive {
     public static int factorial(int n) {
         if (n <= 1)                    // Base/Ending Case
             return 1;
-        return n * factorial(n-1);  // Recursice Case
+        return n * factorial(n-1);  // Recursive Case
     }
 
     public static void main(String[] args) {
