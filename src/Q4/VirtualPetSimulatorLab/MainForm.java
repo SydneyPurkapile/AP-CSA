@@ -20,6 +20,9 @@ public class MainForm extends JFrame{
     private JButton adoptCat;
     private JButton button7;
     private JButton adoptFox;
+    private JComboBox comboBox1;
+    private JLabel picture;
+    private JLabel stats;
 
     public MainForm() {
         super("Virtual Pet Simulator");
