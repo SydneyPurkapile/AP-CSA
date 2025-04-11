@@ -6,6 +6,14 @@ public class PetManager {
 
     // TODO: Implement methods sa needed to interact with the pets list
     public void addPet(Pet pet) {
+        pets.add(pet);
+    }
 
+    public void removePet(Pet pet) {
+        pets.remove(pet);
+    }
+
+    public void printList() {
+        System.out.println(pets);
     }
 }
