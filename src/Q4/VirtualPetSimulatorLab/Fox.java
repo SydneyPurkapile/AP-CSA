@@ -8,40 +8,40 @@ public class Fox extends Pet {
 
     @Override
     public void feed() {
-        Pet.setEnergy(getEnergy() + 10);
-        if (Pet.getEnergy() > 100)
-            Pet.setEnergy(100);
-        Pet.setHappiness(getHappiness() + 10);
-        if (Pet.getHappiness() > 100)
-            Pet.setHappiness(100);
-        Pet.setHunger(getHunger() - 10);
-        if (Pet.getHunger() < 0)
-            Pet.setHunger(0);
+        super.setEnergy(getEnergy() + 10);
+        if (super.getEnergy() > 100)
+            super.setEnergy(100);
+        super.setHappiness(getHappiness() + 10);
+        if (super.getHappiness() > 100)
+            super.setHappiness(100);
+        super.setHunger(getHunger() - 10);
+        if (super.getHunger() < 0)
+            super.setHunger(0);
     }
 
     @Override
     public void play() {
-        Pet.setEnergy(getEnergy() - 5);
-        if (Pet.getEnergy() < 0)
-            Pet.setEnergy(0);
-        Pet.setHappiness(getHappiness() + 10);
-        if (Pet.getHappiness() > 100)
-            Pet.setHappiness(100);
-        Pet.setHunger(getHunger() + 10);
-        if (Pet.getHunger() > 100)
-            Pet.setHunger(100);
+        super.setEnergy(getEnergy() - 5);
+        if (super.getEnergy() < 0)
+            super.setEnergy(0);
+        super.setHappiness(getHappiness() + 10);
+        if (super.getHappiness() > 100)
+            super.setHappiness(100);
+        super.setHunger(getHunger() + 10);
+        if (super.getHunger() > 100)
+            super.setHunger(100);
     }
 
     @Override
     public void sleep() {
-        Pet.setEnergy(getEnergy() + 15);
-        if (Pet.getEnergy() > 100)
-            Pet.setEnergy(100);
-        Pet.setHappiness(getHappiness() + 10);
-        if (Pet.getHappiness() > 100)
-            Pet.setHappiness(100);
-        Pet.setHunger(getHunger() + 5);
-        if (Pet.getHunger() > 100)
-            Pet.setHunger(100);
+        super.setEnergy(getEnergy() + 15);
+        if (super.getEnergy() > 100)
+            super.setEnergy(100);
+        super.setHappiness(getHappiness() + 10);
+        if (super.getHappiness() > 100)
+            super.setHappiness(100);
+        super.setHunger(getHunger() + 5);
+        if (super.getHunger() > 100)
+            super.setHunger(100);
     }
 }
