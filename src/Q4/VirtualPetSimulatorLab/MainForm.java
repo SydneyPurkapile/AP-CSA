@@ -83,21 +83,24 @@ public class MainForm extends JFrame{
         adoptFox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String name = JOptionPane.showInputDialog("Enter new pet name: ");
+                Fox maya = new Fox(name);
             }
         });
         // Adopt a Cat button action
         adoptCat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String name = JOptionPane.showInputDialog("Enter new pet name: ");
+                Cat winter = new Cat(name);
             }
         });
         // Adopt a Dog button action
         adoptDog.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String name = JOptionPane.showInputDialog("Enter new pet name: ");
+                Dog marlon = new Dog(name);
             }
         });
     }
