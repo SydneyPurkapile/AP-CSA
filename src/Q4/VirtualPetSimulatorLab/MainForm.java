@@ -78,7 +78,6 @@ public class MainForm extends JFrame{
             }
         });
 
-        // TODO: Implement adoption button actions
         // Adopt a Fox button action
         adoptFox.addActionListener(new ActionListener() {
             @Override
