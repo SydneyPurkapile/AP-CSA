@@ -13,7 +13,6 @@ public class PetManager {
         pets.remove(pet);
     }
 
-    public void printList() {
-        System.out.println(pets);
-    }
+    public ArrayList getPet() { return pets; }
+
 }
