@@ -14,5 +14,4 @@ public class PetManager {
     }
 
     public ArrayList getPet() { return pets; }
-
 }
