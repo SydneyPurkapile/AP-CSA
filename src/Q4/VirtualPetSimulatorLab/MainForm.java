@@ -44,7 +44,7 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement feeding the selected pet
-                petSelectorComboBox.getSelectedPet().feed(petSelectorComboBox.getSelectedIndex());
+                getSelectedPet(petSelectorComboBox.getSelectedIndex()).feed();
                 petSelectorComboBox.getSelectedPet().getStatus();
             }
         });
@@ -54,7 +54,7 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement playing with the selected pet
-                petSelectorComboBox.getSelectedPet().play(petSelectorComboBox.getSelectedIndex());
+                getSelectedPet(petSelectorComboBox.getSelectedIndex()).play();
                 petSelectorComboBox.getSelectedPet().getStatus();
             }
         });
@@ -64,7 +64,7 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement putting the selected pet to sleep
-                petSelectorComboBox.getSelectedPet().sleep(petSelectorComboBox.getSelectedIndex());
+                getSelectedPet(petSelectorComboBox.getSelectedIndex()).sleep();
                 petSelectorComboBox.getSelectedPet().getStatus();
             }
         });
