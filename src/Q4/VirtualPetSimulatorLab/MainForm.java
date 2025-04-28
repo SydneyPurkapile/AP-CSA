@@ -44,8 +44,8 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement feeding the selected pet
-                petSelectorComboBox.getSelectedPet().feed(petSelectorComboBox.getSelectedPet());
-                petSelectorComboBox.getSelectedPet().getStatus();
+                petSelectorComboBox.getSelectedIndex().feed(petSelectorComboBox.getSelectedIndex());
+                petSelectorComboBox.getSelectedIndex().getStatus();
             }
         });
 
@@ -54,8 +54,8 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement playing with the selected pet
-                petSelectorComboBox.getSelectedPet().play(petSelectorComboBox.getSelectedPet());
-                petSelectorComboBox.getSelectedPet().getStatus();
+                petSelectorComboBox.getSelectedIndex().play(petSelectorComboBox.getSelectedIndex());
+                petSelectorComboBox.getSelectedIndex().getStatus();
             }
         });
 
@@ -64,8 +64,8 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement putting the selected pet to sleep
-                petSelectorComboBox.getSelectedPet().sleep(petSelectorComboBox.getSelectedPet());
-                petSelectorComboBox.getSelectedPet().getStatus();
+                petSelectorComboBox.getSelectedIndex().sleep(petSelectorComboBox.getSelectedIndex());
+                petSelectorComboBox.getSelectedIndex().getStatus();
             }
         });
 
@@ -80,9 +80,9 @@ public class MainForm extends JFrame{
                 // 1. Grab the current pet from the petManager using petSelectorComboBox.getSelectedIndex()
                 petSelectorComboBox.getSelectedIndex();
                 // 2. Update statusLabel with the selected pet's status
-                petSelectorComboBox.getSelectedPet().getStatus();
+                petSelectorComboBox.getSelectedIndex().getStatus();
                 // 3. Update imageLabel with the selected pet's image using setPetImage()
-                picture.setPetImage(petSelectorComboBox.getSelectedPet);
+                picture.setPetImage(petSelectorComboBox.getSelectedIndex);
             }
         });
 
