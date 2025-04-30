@@ -6,6 +6,11 @@ public class Media {
     private boolean isCheckedOut;
 
     // TODO: Implement constructor (title, isbn)
+    public Media(title, isbn) {
+        title = title;
+        isbn = isbn;
+        isCheckedOut = false;
+    }
 
     // TODO: Implement getter methods
     public void setCheckedOut(boolean checkedOut) { isCheckedOut = checkedOut; }
