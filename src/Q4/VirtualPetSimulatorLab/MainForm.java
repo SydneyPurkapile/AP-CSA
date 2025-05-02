@@ -1,6 +1,7 @@
 package Q4.VirtualPetSimulatorLab;
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -111,6 +112,8 @@ public class MainForm extends JFrame{
             }
         });
     }
+
+    public String getSelectedPet() { return pets(petSelectorComboBox.getSelectedIndex()); }
 
     public void updateStatusLabel(String status) {
         // TODO: Update statusLabel with the provided status
