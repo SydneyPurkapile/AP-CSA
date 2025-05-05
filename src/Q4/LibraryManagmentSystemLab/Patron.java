@@ -7,6 +7,10 @@ public class Patron {
     private ArrayList<Book> checkedOutBooks;
 
     // TODO: Implement constructor (name, patronId)
+    public Patron(String n, String pId) {
+        name = n;
+        patronId = pId;
+    }
 
     // Basic getters
     public String getName() { return name; }
@@ -14,4 +18,12 @@ public class Patron {
 
     // TODO: Implement checkInBook(Book book) and checkOutBook(Book book) methods (remove/add book from checkedOutBooks)
     // Don't forget to set the book's checkedOut field to true/false
+
+    public void checkInBook(Book book) {
+
+    }
+
+    public void checkOutBook(Book book) {
+
+    }
 }

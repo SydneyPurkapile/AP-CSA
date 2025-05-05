@@ -4,9 +4,9 @@ public class Book extends Media {
     private String author;
 
     // TODO: Implement constructor (title, isbn, author); call super constructor
-    public class Book(title, isbn, author) {
+    public Book(String title, String isbn, String auth) {
         super(title, isbn);
-        author = author;
+        author = auth;
     }
 
     public String getAuthor() { return author; }
