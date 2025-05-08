@@ -7,8 +7,18 @@ public class Transaction {
     private String returnDate; // Optional, can be null if not returned yet
 
     // TODO: Implement constructor (isbn, patronId, checkoutDate); set returnDate to null by default
+    public Transaction(String ISBN, String pId, String CD) {
+        isbn = ISBN;
+        patronId = pId;
+        checkoutDate = CD;
+        returnDate = null;
+    }
 
     // TODO: Implement getters and setters
+    public String getIsbn()         { return isbn;         }
+    public String getPatronId()     { return patronId;     }
+    public String getCheckoutDate() { return checkoutDate; }
+    public String getReturnDate()   { return returnDate;   }
 
     @Override
     public String toString() {
