@@ -29,6 +29,7 @@ public class Jeff {
         System.out.println("7) favorite sport");
         System.out.println("8) worst fear");
         System.out.println("9) favorite past time");
+        System.out.println("10) hear a joke");
 
         int choice = input.nextInt();
 
@@ -52,6 +53,13 @@ public class Jeff {
             System.out.println("My worst fear is: " + worstFear);
         else if (choice == 9)
             System.out.println("My favorite past time is: " + favPastTime);
+        else if (choice == 10) {
+            int num = (int) (Math.random() * 3) + 1;
+            if (num == 1)
+                System.out.println("I heard a joke about a jump rope, but I think I'll skip that one");
+            if (num == 2)
+                System.out.println("I went to the beekeeper the other day to buy 12 bees. He gave me 13. And I said, but, sir I only paid you for 12. He said, well, that's a free bee.");
+        }
         else
             System.out.println("That isn't a choice!");
     }
