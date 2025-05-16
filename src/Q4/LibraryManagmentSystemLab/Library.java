@@ -10,18 +10,30 @@ public class Library implements LibrarySystem {
     private ArrayList<Transaction> transactions;
 
     // TODO: Implement the constructor
+    public Library(ArrayList<Book> b, ArrayList<Patron> p, ArrayList<Transaction> t) {
+        books = b;
+        patrons = p;
+        transactions = t;
+    }
 
     // Implement interface methods
     @Override
-    public void addBook(Book book) { /* Implementation; remember to add in sorted order */ }
+    public void addBook(Book book) {
+        books.add(book);
+    }
     @Override
-    public void removeBook(String isbn) { /* Implementation */ }
-    // Other methods...
+    public void removeBook(String isbn) {
+        books.remove(books.indexOf(isbn));
+    }
 
+    // Other methods...
     @Override
     public void viewMostRecentTransaction(String isbn) {
         // Hint: Use a backward loop to find the most recent transaction
-        // If no transaction is found, print "No transactions found for ISBN: <isbn>"
+        // If no transaction is found, print "No transactions found for ISBN: <isbn>"\
+        for (int i = books.size(); i > 0; i--) {
+
+        }
     }
 
     // TODO: Complete the implementation of LibrarySystem methods
@@ -38,6 +50,13 @@ public class Library implements LibrarySystem {
     }
 
     // You might want to add some helper methods here like getBookByIsbn, getPatronById, etc.
+    public String getBpplByIsbn(String isbn) {
+
+    }
+
+    public String getPatronById(String pId) {
+
+    }
 
     /* ========== DO NOT MODIFY ========== */
     public static String getDateToday() {
