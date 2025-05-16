@@ -57,8 +57,10 @@ public class Jeff {
             int num = (int) (Math.random() * 3) + 1;
             if (num == 1)
                 System.out.println("I heard a joke about a jump rope, but I think I'll skip that one");
-            if (num == 2)
+            else if (num == 2)
                 System.out.println("I went to the beekeeper the other day to buy 12 bees. He gave me 13. And I said, but, sir I only paid you for 12. He said, well, that's a free bee.");
+            else
+                System.out.println("Look in a mirror");
         }
         else
             System.out.println("That isn't a choice!");

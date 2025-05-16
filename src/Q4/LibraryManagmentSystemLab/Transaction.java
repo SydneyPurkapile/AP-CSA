@@ -20,6 +20,11 @@ public class Transaction {
     public String getCheckoutDate() { return checkoutDate; }
     public String getReturnDate()   { return returnDate;   }
 
+    public void setIsbn(String ISBN)      { isbn = ISBN;       }
+    public void setPatronId(String pId)   { patronId = pId;    }
+    public void setCheckedDate(String CD) { checkoutDate = CD; }
+    public void setReturnDate(String RD) { returnDate = RD; }
+
     @Override
     public String toString() {
         return "Transaction{" +
