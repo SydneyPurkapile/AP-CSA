@@ -10,6 +10,7 @@ public class Patron {
     public Patron(String n, String pId) {
         name = n;
         patronId = pId;
+        checkedOutBooks = null;
     }
 
     // Basic getters
@@ -20,10 +21,10 @@ public class Patron {
     // Don't forget to set the book's checkedOut field to true/false
 
     public void checkInBook(Book book) {
-
+        checkedOutBooks.remove(indexOf(book));
     }
 
     public void checkOutBook(Book book) {
-
+        checkedOutBooks.add(book);
     }
 }
