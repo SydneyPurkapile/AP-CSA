@@ -21,7 +21,7 @@ public class Patron {
     // Don't forget to set the book's checkedOut field to true/false
 
     public void checkInBook(Book book) {
-        checkedOutBooks.remove(indexOf(book));
+        checkedOutBooks.remove(checkedOutBooks.indexOf(book));
     }
 
     public void checkOutBook(Book book) {
