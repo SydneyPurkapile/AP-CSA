@@ -21,9 +21,30 @@ public class Library implements LibrarySystem {
     public void addBook(Book book) {
         books.add(book);
     }
+
     @Override
     public void removeBook(String isbn) {
         books.remove(books.indexOf(isbn));
+    }
+
+    @Override
+    public void addPatron(Patron patron) {
+        patrons.add(patron);
+    }
+
+    @Override
+    public void removePatron(String patronId) {
+        patrons.remove(patrons.indexOf(patronId));
+    }
+
+    @Override
+    public void createTransaction(String isbn, String patronId, String checkoutDate) {
+
+    }
+
+    @Override
+    public void updateTransaction(String isbn, String patronId, String returnDate) {
+
     }
 
     // Other methods...
@@ -47,7 +68,14 @@ public class Library implements LibrarySystem {
     @Override
     public Book searchBookByTitle(String title) {
         // TODO: Binary search for book; if not found, return the closest book
-        
+        for (int i = 0; i < books.size(); i++) {
+
+        }
+    }
+
+    @Override
+    public Book searchBookByAuthor(String author) {
+        return null;
     }
 
     // You might want to add some helper methods here like getBookByIsbn, getPatronById, etc.
