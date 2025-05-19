@@ -50,12 +50,12 @@ public class Library implements LibrarySystem {
     }
 
     // You might want to add some helper methods here like getBookByIsbn, getPatronById, etc.
-    public String getBpplByIsbn(String isbn) {
+    public String getBookByIsbn(String isbn) {
 
     }
 
     public String getPatronById(String pId) {
-
+        
     }
 
     /* ========== DO NOT MODIFY ========== */
