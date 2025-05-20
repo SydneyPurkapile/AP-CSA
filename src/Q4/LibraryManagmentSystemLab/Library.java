@@ -68,19 +68,23 @@ public class Library implements LibrarySystem {
     @Override
     public Book searchBookByTitle(String title) {
         // TODO: Binary search for book; if not found, return the closest book
-        for (int i = 0; i < books.size(); i++) {
-
-        }
+        for (int i = 0; i < books.size(); i++)
+            if (books(i).equals(title))
+                return books(i);
     }
 
     @Override
     public Book searchBookByAuthor(String author) {
-        return null;
+        for (int i = 0; i < books.size(); i++)
+            if (books(i).getAuthor().equals(author))
+                return books(i);
     }
 
     // You might want to add some helper methods here like getBookByIsbn, getPatronById, etc.
     public String getBookByIsbn(String isbn) {
-
+        for (int i = 0; i < books.size(); i++)
+            if (books(i).getIsbn().equals(isbn))
+                return books(i);
     }
 
     public String getPatronById(String pId) {
