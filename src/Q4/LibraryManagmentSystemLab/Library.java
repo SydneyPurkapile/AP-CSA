@@ -63,6 +63,9 @@ public class Library implements LibrarySystem {
     @Override
     public Book findClosestBook(String title) {
         // TODO: Search for the closest book title using .toLowerCase() and .contains(); return the closest book or null
+        for (int i = 0; i < books.length; i++)
+            if (books.get(i).getTitle().contains(title))
+                return books.get(i).getTitle();
     }
 
     @Override
@@ -88,7 +91,9 @@ public class Library implements LibrarySystem {
     }
 
     public String getPatronById(String pId) {
-        
+        for (int i = 0; i < patrons.size(); i++)
+            if (patrons.get(i).getPatronId().equals(pId))
+                return patrons.get(i);
     }
 
     /* ========== DO NOT MODIFY ========== */
