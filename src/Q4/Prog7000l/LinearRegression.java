@@ -1,4 +1,4 @@
-package Q4.Prog7000I;
+package Q4.Prog7000l;
 import java.util.Arrays;
 
 public class LinearRegression {
@@ -52,5 +52,7 @@ public class LinearRegression {
     public double getIntercept() { return theta1; }
     public double getSlope() { return theta1; }
 
-    // TODO: toString()
+    public String toString() {
+        return "Regression line: y = " + theta1 + " * x + " + theta0 + "\nObjective: " + Arrays.toString(objective) + "\nMin Objective: " + Arrays.stream(objective).min().getAsDouble();
+    }
 }
