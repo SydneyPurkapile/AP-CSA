@@ -39,12 +39,15 @@ public class Library implements LibrarySystem {
 
     @Override
     public void createTransaction(String isbn, String patronId, String checkoutDate) {
-
+        Transaction temp = new Transaction(isbn, patronId, checkoutDate);
+        transactions.add(temp);
     }
 
     @Override
     public void updateTransaction(String isbn, String patronId, String returnDate) {
-
+        for (int i = 0; i < transactions.size(); i++)
+            if (transactions.get(i).getIsbn().equals(isbn))
+                transactions.get(i).setReturnDate(returnDate);
     }
 
     // Other methods...
@@ -52,9 +55,10 @@ public class Library implements LibrarySystem {
     public void viewMostRecentTransaction(String isbn) {
         // Hint: Use a backward loop to find the most recent transaction
         // If no transaction is found, print "No transactions found for ISBN: <isbn>"\
-        for (int i = books.size(); i > 0; i--) {
-
-        }
+        for (int i = transactions.size(); i > 0; i--)
+            if (transactions.get(i).getIsbn().equals(isbn))
+                System.out.println(transactions.get(i).toString());
+        System.out.println("No Transaction Found");
     }
 
     // TODO: Complete the implementation of LibrarySystem methods
